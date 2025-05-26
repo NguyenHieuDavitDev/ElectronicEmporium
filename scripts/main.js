@@ -6,11 +6,11 @@ const products = [
         category: "smartphone",
         price: 29990000,
         originalPrice: 32990000,
-        image: "https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-200x200.jpg",
+        image: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-bluetitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1692895703032",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-blue-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/42/305658/iphone-15-pro-max-2-1.jpg"
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-bluetitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1692895703032",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-side-bluetitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1692895703703",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/iphone-15-pro-back-bluetitanium-select?wid=470&hei=556&fmt=png-alpha&.v=1692895703703"
         ],
         description: "iPhone 15 Pro Max với chip A17 Pro mạnh mẽ, camera 48MP chuyên nghiệp và thiết kế titanium sang trọng.",
         specs: {
@@ -32,11 +32,11 @@ const products = [
         category: "smartphone",
         price: 27990000,
         originalPrice: 31990000,
-        image: "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumbnew-200x200.jpg",
+        image: "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-galaxy-s24-ultra-s928-sm-s928bzkexxv-thumb-539573719",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-grey-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/42/307174/samsung-galaxy-s24-ultra-2-1.jpg"
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-galaxy-s24-ultra-s928-sm-s928bzkexxv-539573714",
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-galaxy-s24-ultra-s928-sm-s928bzkexxv-539573715",
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/2401/gallery/vn-galaxy-s24-ultra-s928-sm-s928bzkexxv-539573716"
         ],
         description: "Samsung Galaxy S24 Ultra với S Pen tích hợp, camera 200MP và AI thông minh.",
         specs: {
@@ -58,11 +58,11 @@ const products = [
         category: "laptop",
         price: 54990000,
         originalPrice: 59990000,
-        image: "https://cdn.tgdd.vn/Products/Images/44/309016/macbook-pro-14-inch-m3-pro-2023-xam-thumbnew-200x200.jpg",
+        image: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/44/309016/macbook-pro-14-inch-m3-pro-2023-xam-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/44/309016/macbook-pro-14-inch-m3-pro-2023-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/44/309016/macbook-pro-14-inch-m3-pro-2023-2-1.jpg"
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-select-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054290",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-side-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054440",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/mbp14-spacegray-open-202310?wid=904&hei=840&fmt=jpeg&qlt=90&.v=1697311054497"
         ],
         description: "MacBook Pro 14 inch với chip M3 Pro mạnh mẽ, màn hình Liquid Retina XDR và thiết kế di động.",
         specs: {
@@ -84,11 +84,11 @@ const products = [
         category: "laptop",
         price: 32990000,
         originalPrice: 36990000,
-        image: "https://cdn.tgdd.vn/Products/Images/44/285071/dell-xps-13-plus-9320-i7-71013359-220722-093324-200x200.jpg",
+        image: "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/13-9320/media-gallery/notebook-xps-13-9320-nt-silver-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2324&qlt=100,1&resMode=sharp2&size=3491,2324&chrss=full&imwidth=5000",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/44/285071/dell-xps-13-plus-9320-i7-71013359-220722-093324-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/44/285071/dell-xps-13-plus-9320-i7-71013359-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/44/285071/dell-xps-13-plus-9320-i7-71013359-2-1.jpg"
+            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/13-9320/media-gallery/notebook-xps-13-9320-nt-silver-gallery-1.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2324&qlt=100,1&resMode=sharp2&size=3491,2324&chrss=full&imwidth=5000",
+            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/13-9320/media-gallery/notebook-xps-13-9320-nt-silver-gallery-2.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2324&qlt=100,1&resMode=sharp2&size=3491,2324&chrss=full&imwidth=5000",
+            "https://i.dell.com/is/image/DellContent/content/dam/ss2/product-images/dell-client-products/notebooks/xps-notebooks/13-9320/media-gallery/notebook-xps-13-9320-nt-silver-gallery-3.psd?fmt=pjpg&pscan=auto&scl=1&wid=3491&hei=2324&qlt=100,1&resMode=sharp2&size=3491,2324&chrss=full&imwidth=5000"
         ],
         description: "Dell XPS 13 Plus với thiết kế hiện đại, màn hình 4K và hiệu năng mạnh mẽ.",
         specs: {
@@ -110,11 +110,11 @@ const products = [
         category: "headphone",
         price: 8990000,
         originalPrice: 9990000,
-        image: "https://cdn.tgdd.vn/Products/Images/54/289326/tai-nghe-bluetooth-chup-tai-sony-wh-1000xm5-den-thumbnew-200x200.jpg",
+        image: "https://assets.sony.com/image/5d02f6a72b3afd95e6e7dd8e6541207c?fmt=pjpg&wid=440&hei=440&fit=constrain",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/54/289326/tai-nghe-bluetooth-chup-tai-sony-wh-1000xm5-den-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/54/289326/tai-nghe-bluetooth-chup-tai-sony-wh-1000xm5-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/54/289326/tai-nghe-bluetooth-chup-tai-sony-wh-1000xm5-2-1.jpg"
+            "https://assets.sony.com/image/5d02f6a72b3afd95e6e7dd8e6541207c?fmt=pjpg&wid=440&hei=440&fit=constrain",
+            "https://assets.sony.com/image/0d1ed1a538a96a52e8fc93abf3fb3a39?fmt=pjpg&wid=440&hei=440&fit=constrain",
+            "https://assets.sony.com/image/91fccc34ea2aa4d80b36b3d25f6aa88b?fmt=pjpg&wid=440&hei=440&fit=constrain"
         ],
         description: "Tai nghe chống ồn hàng đầu với chất lượng âm thanh Hi-Fi và pin 30 giờ.",
         specs: {
@@ -136,11 +136,11 @@ const products = [
         category: "headphone",
         price: 6990000,
         originalPrice: 7990000,
-        image: "https://cdn.tgdd.vn/Products/Images/54/289780/tai-nghe-bluetooth-true-wireless-apple-airpods-pro-2nd-gen-magsafe-charge-thumbnew-200x200.jpg",
+        image: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/54/289780/tai-nghe-bluetooth-true-wireless-apple-airpods-pro-2nd-gen-magsafe-charge-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/54/289780/tai-nghe-bluetooth-true-wireless-apple-airpods-pro-2nd-gen-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/54/289780/tai-nghe-bluetooth-true-wireless-apple-airpods-pro-2nd-gen-2-1.jpg"
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQD83?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803972361",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/airpods-pro-2nd-gen-hero-select-202209?wid=556&hei=556&fmt=png-alpha&.v=1660925845194",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/MQD83_AV1?wid=572&hei=572&fmt=jpeg&qlt=95&.v=1660803981240"
         ],
         description: "AirPods Pro thế hệ 2 với chip H2, chống ồn thích ứng và âm thanh không gian.",
         specs: {
@@ -162,11 +162,11 @@ const products = [
         category: "tablet",
         price: 29990000,
         originalPrice: 32990000,
-        image: "https://cdn.tgdd.vn/Products/Images/522/289172/ipad-pro-m2-12-9-wifi-128gb-2022-xam-thumbnew-200x200.jpg",
+        image: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202210?wid=940&hei=1112&fmt=png-alpha&.v=1664411207213",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/522/289172/ipad-pro-m2-12-9-wifi-128gb-2022-xam-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/522/289172/ipad-pro-m2-12-9-wifi-128gb-2022-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/522/289172/ipad-pro-m2-12-9-wifi-128gb-2022-2-1.jpg"
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-202210?wid=940&hei=1112&fmt=png-alpha&.v=1664411207213",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-select-wifi-spacegray-landscape-202210?wid=1112&hei=940&fmt=png-alpha&.v=1664411207308",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/ipad-pro-12-pencil-202210?wid=940&hei=1112&fmt=png-alpha&.v=1664411207435"
         ],
         description: "iPad Pro 12.9 inch với chip M2 mạnh mẽ, màn hình Liquid Retina XDR và hỗ trợ Apple Pencil.",
         specs: {
@@ -188,11 +188,11 @@ const products = [
         category: "tablet",
         price: 24990000,
         originalPrice: 27990000,
-        image: "https://cdn.tgdd.vn/Products/Images/522/309831/samsung-galaxy-tab-s9-ultra-5g-xam-thumbnew-200x200.jpg",
+        image: "https://images.samsung.com/is/image/samsung/p6pim/vn/sm-x910nzaaxxv/gallery/vn-galaxy-tab-s9-ultra-x910-sm-x910nzaaxxv-thumb-537855093",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/522/309831/samsung-galaxy-tab-s9-ultra-5g-xam-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/522/309831/samsung-galaxy-tab-s9-ultra-5g-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/522/309831/samsung-galaxy-tab-s9-ultra-5g-2-1.jpg"
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/sm-x910nzaaxxv/gallery/vn-galaxy-tab-s9-ultra-x910-sm-x910nzaaxxv-537855088",
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/sm-x910nzaaxxv/gallery/vn-galaxy-tab-s9-ultra-x910-sm-x910nzaaxxv-537855089",
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/sm-x910nzaaxxv/gallery/vn-galaxy-tab-s9-ultra-x910-sm-x910nzaaxxv-537855090"
         ],
         description: "Galaxy Tab S9 Ultra với màn hình 14.6 inch, S Pen đi kèm và hiệu năng mạnh mẽ.",
         specs: {
@@ -214,11 +214,11 @@ const products = [
         category: "smartwatch",
         price: 9990000,
         originalPrice: 10990000,
-        image: "https://cdn.tgdd.vn/Products/Images/7077/309897/apple-watch-s9-gps-45mm-vien-nhom-day-cao-su-xanh-thumbnew-200x200.jpg",
+        image: "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-s9-45-alum-blue-nc-s9_VW_PF+watch-face-s9-45-alum-blue-nc-s9_VW_PF_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694507270866",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/7077/309897/apple-watch-s9-gps-45mm-vien-nhom-day-cao-su-xanh-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/7077/309897/apple-watch-s9-gps-45mm-vien-nhom-day-cao-su-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/7077/309897/apple-watch-s9-gps-45mm-vien-nhom-day-cao-su-2-1.jpg"
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-s9-45-alum-blue-nc-s9_VW_PF+watch-face-s9-45-alum-blue-nc-s9_VW_PF_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694507270866",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-s9-45-alum-blue-nc-s9_VW_34FR+watch-face-s9-45-alum-blue-nc-s9_VW_34FR_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694507270975",
+            "https://store.storeimages.cdn-apple.com/8756/as-images.apple.com/is/watch-s9-45-alum-blue-nc-s9_VW_FL+watch-face-s9-45-alum-blue-nc-s9_VW_FL_WF_CO?wid=750&hei=712&trim=1%2C0&fmt=p-jpg&qlt=95&.v=1694507271010"
         ],
         description: "Apple Watch Series 9 với chip S9 SiP, màn hình sáng hơn và tính năng Double Tap mới.",
         specs: {
