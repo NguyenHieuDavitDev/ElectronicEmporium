@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giỏ hàng - TechStore</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="TechStore" class="logo">
+                    <span class="logo-text">TechStore</span>
+                </div>
+                
+                <div class="nav-search">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                        <button class="search-btn" onclick="searchProducts()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="cart-btn" onclick="goToCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Trang chủ</a>
+            <span>/</span>
+            <span>Giỏ hàng</span>
+        </div>
+    </nav>
+
+    <!-- Cart Content -->
+    <main class="cart-page">
+        <div class="container">
+            <h1>Giỏ hàng của bạn</h1>
+            
+            <div class="cart-content" id="cartContent">
+                <!-- Cart items will be loaded by JavaScript -->
+            </div>
+
+            <!-- Empty Cart State -->
+            <div class="empty-cart" id="emptyCart" style="display: none;">
+                <div class="empty-cart-content">
+                    <i class="fas fa-shopping-cart"></i>
+                    <h2>Giỏ hàng trống</h2>
+                    <p>Bạn chưa có sản phẩm nào trong giỏ hàng</p>
+                    <a href="index.html" class="continue-shopping-btn">Tiếp tục mua sắm</a>
+                </div>
+            </div>
+
+            <!-- Cart Summary -->
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <div class="summary-content">
+                    <h3>Tóm tắt đơn hàng</h3>
+                    <div class="summary-row">
+                        <span>Tạm tính:</span>
+                        <span id="subtotal">0₫</span>
+                    </div>
+                    <div class="summary-row">
+                        <span>Phí vận chuyển:</span>
+                        <span id="shipping">30,000₫</span>
+                    </div>
+                    <div class="summary-row total">
+                        <span>Tổng cộng:</span>
+                        <span id="total">0₫</span>
+                    </div>
+                    <div class="summary-actions">
+                        <a href="index.html" class="continue-shopping">Tiếp tục mua sắm</a>
+                        <button class="checkout-btn" onclick="proceedToCheckout()">Thanh toán</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Cửa hàng điện tử hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: contact@techstore.vn</p>
+                    <p>Hotline: 1800-1234</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Chính sách</h4>
+                    <p>Bảo hành</p>
+                    <p>Đổi trả</p>
+                    <p>Vận chuyển</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/cart.js"></script>
+</body>
+</html>

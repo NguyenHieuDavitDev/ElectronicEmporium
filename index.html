@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TechStore - Cửa hàng điện tử hàng đầu</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="TechStore" class="logo">
+                    <span class="logo-text">TechStore</span>
+                </div>
+                
+                <div class="nav-search">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm...">
+                        <button class="search-btn" onclick="searchProducts()">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="cart-btn" onclick="goToCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Khám phá công nghệ mới nhất</h1>
+            <p>Tìm kiếm những sản phẩm điện tử tốt nhất với giá cả hợp lý</p>
+            <button class="cta-btn" onclick="scrollToProducts()">Xem sản phẩm</button>
+        </div>
+    </section>
+
+    <!-- Category Filter -->
+    <section class="categories">
+        <div class="container">
+            <h2>Danh mục sản phẩm</h2>
+            <div class="category-filters">
+                <button class="filter-btn active" data-category="all">Tất cả</button>
+                <button class="filter-btn" data-category="smartphone">Điện thoại</button>
+                <button class="filter-btn" data-category="laptop">Laptop</button>
+                <button class="filter-btn" data-category="headphone">Tai nghe</button>
+                <button class="filter-btn" data-category="tablet">Tablet</button>
+                <button class="filter-btn" data-category="smartwatch">Đồng hồ thông minh</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2>Sản phẩm nổi bật</h2>
+            <div class="products-grid" id="featuredProducts">
+                <!-- Featured products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- All Products -->
+    <section class="all-products" id="productsSection">
+        <div class="container">
+            <h2>Tất cả sản phẩm</h2>
+            <div class="products-grid" id="productsGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Cửa hàng điện tử hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: contact@techstore.vn</p>
+                    <p>Hotline: 1800-1234</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Chính sách</h4>
+                    <p>Bảo hành</p>
+                    <p>Đổi trả</p>
+                    <p>Vận chuyển</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>

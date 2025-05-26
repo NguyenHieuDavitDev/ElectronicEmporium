@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh toán - TechStore</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <img src="assets/logo.svg" alt="TechStore" class="logo">
+                    <span class="logo-text">TechStore</span>
+                </div>
+                
+                <div class="nav-search">
+                    <div class="search-container">
+                        <input type="text" id="searchInput" placeholder="Tìm kiếm sản phẩm..." disabled>
+                        <button class="search-btn" disabled>
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="nav-actions">
+                    <button class="cart-btn" onclick="goToCart()">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count" id="cartCount">0</span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Breadcrumb -->
+    <nav class="breadcrumb">
+        <div class="container">
+            <a href="index.html">Trang chủ</a>
+            <span>/</span>
+            <a href="cart.html">Giỏ hàng</a>
+            <span>/</span>
+            <span>Thanh toán</span>
+        </div>
+    </nav>
+
+    <!-- Checkout Content -->
+    <main class="checkout-page">
+        <div class="container">
+            <h1>Thanh toán</h1>
+            
+            <!-- Order Success Message (Hidden by default) -->
+            <div class="order-success" id="orderSuccess" style="display: none;">
+                <div class="success-content">
+                    <i class="fas fa-check-circle"></i>
+                    <h2>Đặt hàng thành công!</h2>
+                    <p>Cảm ơn bạn đã mua sắm tại TechStore</p>
+                    <div class="order-details">
+                        <p><strong>Mã đơn hàng:</strong> <span id="orderNumber"></span></p>
+                        <p><strong>Tổng tiền:</strong> <span id="orderTotal"></span></p>
+                        <p>Chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất để xác nhận đơn hàng.</p>
+                    </div>
+                    <div class="success-actions">
+                        <a href="index.html" class="continue-shopping-btn">Tiếp tục mua sắm</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Checkout Form -->
+            <div class="checkout-content" id="checkoutContent">
+                <div class="checkout-grid">
+                    <!-- Customer Information -->
+                    <div class="customer-info">
+                        <h2>Thông tin khách hàng</h2>
+                        <form id="checkoutForm" class="checkout-form">
+                            <div class="form-group">
+                                <label for="fullName">Họ và tên *</label>
+                                <input type="text" id="fullName" name="fullName" required>
+                                <span class="error-message" id="fullNameError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email *</label>
+                                <input type="email" id="email" name="email" required>
+                                <span class="error-message" id="emailError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Số điện thoại *</label>
+                                <input type="tel" id="phone" name="phone" required>
+                                <span class="error-message" id="phoneError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Địa chỉ giao hàng *</label>
+                                <textarea id="address" name="address" rows="3" required></textarea>
+                                <span class="error-message" id="addressError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="city">Thành phố *</label>
+                                <select id="city" name="city" required>
+                                    <option value="">Chọn thành phố</option>
+                                    <option value="hanoi">Hà Nội</option>
+                                    <option value="hcm">TP. Hồ Chí Minh</option>
+                                    <option value="danang">Đà Nẵng</option>
+                                    <option value="cantho">Cần Thơ</option>
+                                    <option value="haiphong">Hải Phòng</option>
+                                </select>
+                                <span class="error-message" id="cityError"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="notes">Ghi chú (tùy chọn)</label>
+                                <textarea id="notes" name="notes" rows="2" placeholder="Ghi chú thêm về đơn hàng..."></textarea>
+                            </div>
+
+                            <div class="payment-method">
+                                <h3>Phương thức thanh toán</h3>
+                                <div class="payment-options">
+                                    <label class="payment-option">
+                                        <input type="radio" name="paymentMethod" value="cod" checked>
+                                        <span class="payment-label">
+                                            <i class="fas fa-money-bill-wave"></i>
+                                            Thanh toán khi nhận hàng (COD)
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="paymentMethod" value="bank">
+                                        <span class="payment-label">
+                                            <i class="fas fa-university"></i>
+                                            Chuyển khoản ngân hàng
+                                        </span>
+                                    </label>
+                                    <label class="payment-option">
+                                        <input type="radio" name="paymentMethod" value="momo">
+                                        <span class="payment-label">
+                                            <i class="fas fa-mobile-alt"></i>
+                                            Ví điện tử MoMo
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- Order Summary -->
+                    <div class="order-summary">
+                        <h2>Đơn hàng của bạn</h2>
+                        <div class="order-items" id="orderItems">
+                            <!-- Order items will be loaded by JavaScript -->
+                        </div>
+                        
+                        <div class="order-totals">
+                            <div class="total-row">
+                                <span>Tạm tính:</span>
+                                <span id="checkoutSubtotal">0₫</span>
+                            </div>
+                            <div class="total-row">
+                                <span>Phí vận chuyển:</span>
+                                <span id="checkoutShipping">30,000₫</span>
+                            </div>
+                            <div class="total-row grand-total">
+                                <span>Tổng cộng:</span>
+                                <span id="checkoutTotal">0₫</span>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="place-order-btn" onclick="submitOrder()">
+                            <i class="fas fa-check"></i>
+                            Xác nhận đặt hàng
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>TechStore</h3>
+                    <p>Cửa hàng điện tử hàng đầu Việt Nam</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Liên hệ</h4>
+                    <p>Email: contact@techstore.vn</p>
+                    <p>Hotline: 1800-1234</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Chính sách</h4>
+                    <p>Bảo hành</p>
+                    <p>Đổi trả</p>
+                    <p>Vận chuyển</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 TechStore. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+    <script src="scripts/checkout.js"></script>
+</body>
+</html>
