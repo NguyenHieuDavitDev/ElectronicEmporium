@@ -48,18 +48,18 @@ function createCartItemHTML(cartItem) {
                 <p>${getCategoryName(product.category)}</p>
                 <p class="item-price">${formatPrice(product.price)} / sản phẩm</p>
             </div>
-            <div class="cart-item-price">
-                ${formatPrice(totalPrice)}
-            </div>
-            <div class="cart-item-quantity">
-                <div class="quantity-controls">
-                    <button class="qty-btn" onclick="updateQuantity(${product.id}, ${cartItem.quantity - 1})">-</button>
-                    <input type="number" value="${cartItem.quantity}" min="1" max="10" 
-                           onchange="updateQuantity(${product.id}, parseInt(this.value))">
-                    <button class="qty-btn" onclick="updateQuantity(${product.id}, ${cartItem.quantity + 1})">+</button>
+            <div class="cart-item-actions">
+                <div class="cart-item-price">
+                    ${formatPrice(totalPrice)}
                 </div>
-            </div>
-            <div class="cart-item-remove">
+                <div class="cart-item-quantity">
+                    <div class="quantity-controls">
+                        <button class="qty-btn" onclick="updateQuantity(${product.id}, ${cartItem.quantity - 1})">-</button>
+                        <input type="number" value="${cartItem.quantity}" min="1" max="10" 
+                               onchange="updateQuantity(${product.id}, parseInt(this.value))">
+                        <button class="qty-btn" onclick="updateQuantity(${product.id}, ${cartItem.quantity + 1})">+</button>
+                    </div>
+                </div>
                 <button class="cart-item-remove" onclick="removeItem(${product.id})">
                     <i class="fas fa-trash"></i>
                 </button>
