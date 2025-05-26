@@ -240,11 +240,11 @@ const products = [
         category: "smartwatch",
         price: 7990000,
         originalPrice: 8990000,
-        image: "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-den-thumbnew-200x200.jpg",
+        image: "https://images.samsung.com/is/image/samsung/p6pim/vn/2307/gallery/vn-galaxy-watch6-r940-sm-r940nzkaxev-thumb-537038633",
         images: [
-            "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-den-thumbnew-600x600.jpg",
-            "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-1-1.jpg",
-            "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-2-1.jpg"
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/2307/gallery/vn-galaxy-watch6-r940-sm-r940nzkaxev-537038628",
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/2307/gallery/vn-galaxy-watch6-r940-sm-r940nzkaxev-537038629", 
+            "https://images.samsung.com/is/image/samsung/p6pim/vn/2307/gallery/vn-galaxy-watch6-r940-sm-r940nzkaxev-537038630"
         ],
         description: "Galaxy Watch6 Classic với vòng xoay Rotating Bezel, theo dõi sức khỏe toàn diện.",
         specs: {
