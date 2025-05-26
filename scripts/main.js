@@ -240,11 +240,11 @@ const products = [
         category: "smartwatch",
         price: 7990000,
         originalPrice: 8990000,
-        image: "https://via.placeholder.com/300x300/84CC16/ffffff?text=Galaxy+Watch",
+        image: "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-den-thumbnew-200x200.jpg",
         images: [
-            "https://via.placeholder.com/400x400/84CC16/ffffff?text=Galaxy+Watch+Front",
-            "https://via.placeholder.com/400x400/84CC16/ffffff?text=Galaxy+Watch+Classic",
-            "https://via.placeholder.com/400x400/84CC16/ffffff?text=Galaxy+Watch+Band"
+            "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-den-thumbnew-600x600.jpg",
+            "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-1-1.jpg",
+            "https://cdn.tgdd.vn/Products/Images/7077/309322/samsung-galaxy-watch6-classic-43mm-2-1.jpg"
         ],
         description: "Galaxy Watch6 Classic với vòng xoay Rotating Bezel, theo dõi sức khỏe toàn diện.",
         specs: {
@@ -585,11 +585,15 @@ function initializePage() {
     }
 }
 
-// Wait for DOM to be ready
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializePage);
-} else {
-    initializePage();
+// Prevent infinite loop by checking if already initialized
+if (!window.mainJsInitialized) {
+    window.mainJsInitialized = true;
+    // Wait for DOM to be ready
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initializePage);
+    } else {
+        initializePage();
+    }
 }
 
 // Export functions for use in other scripts
